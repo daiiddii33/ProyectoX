@@ -1,0 +1,342 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del título principal */
+.main-title {
+    font-family: "Great Vibes", cursive;
+    font-optical-sizing: auto;
+    font-size: 800%;
+}
+
+/*Ajuste de la imagen avion*/
+.image-container {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 600px; /* O un ancho específico si lo deseas */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 100px; /* Crea espacio por encima de la imagen */
+    margin-bottom: 50px; /* Crea espacio por debajo de la imagen */
+    text-align: center; /* Para que la imagen quede centrada, si es necesario */
+}
+.responsive-img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Para que la imagen quede centrada si es una imagen en línea */
+}
+
+/* Estilo para el logo */
+.logo {
+    position: absolute; /* Posiciona el logo de manera absoluta dentro del encabezado */
+    top: 10px; /* Posiciona el logo 10px desde la parte superior */
+    left: 10px; /* Posiciona el logo 10px desde la parte izquierda */
+}
+/* Estilo para hacer que el logo sea redondo */
+.logo img {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 100px; /* Establece la altura igual al ancho para mantener la forma circular */
+    border-radius: 100%; /* Esto hace que la imagen sea completamente redonda */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente dentro del contenedor */
+}
+
+/* Estilo general para todo el cuerpo de la página */
+body {
+    font-family: 'Montserrat-SemiBold', sans-serif; /* Usa comillas y una fuente de respaldo */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center; /* Centra el contenido dentro del encabezado */
+    background-color: #dce0e3; /* Color de fondo azul para el encabezado */
+    color: rgb(0, 0, 0); /* Color del texto blanco */
+    padding: 20px 0; /* Espaciado interno arriba y abajo */
+    position: relative; /* Posiciona elementos de forma relativa dentro del encabezado */
+}
+
+/* Estilo para el contenedor de búsqueda */
+.search-container {
+    margin-top: 20px; /* Añade un margen superior de 20px para separar del contenido superior */
+}
+
+/* Estilo para el campo de entrada de texto en la búsqueda */
+.search-container input {
+    padding: 10px; /* Espaciado interno de 10px dentro del campo de búsqueda */
+    width: 300px; /* Ancho fijo de 300px para el campo de búsqueda */
+    font-size: 1rem; /* Tamaño de fuente de 1 rem */
+    border: none; /* Elimina los bordes del campo de búsqueda */
+    border-radius: 5px; /* Bordes redondeados con un radio de 5px */
+}
+
+/* Estilo para el botón de búsqueda */
+.search-container .btn-search {
+    padding: 10px; /* Espaciado interno de 10px dentro del botón */
+    background-color: white; /* Fondo blanco para el botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+    font-size: 1.2rem; /* Tamaño de fuente ligeramente más grande para el botón */
+    margin-left: 5px; /* Margen a la izquierda para separar del campo de entrada */
+}
+
+
+
+/* Contenedor de las opciones de navegación. 
+   Se usa flexbox para centrar las opciones y darles un espaciado uniforme. */
+   .options-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 20px 0; /* Espacio superior e inferior de 20px */
+    background-color: #fff025; /* Color de fondo oscuro */
+    padding: 10px; /* Espaciado interno (padding) alrededor de las opciones */
+    box-shadow: 0px 4px 8px #275B83;
+}
+
+/* Estilos para cada opción de la barra de navegación */
+.options-nav .option {
+    margin: 0 20px; /* Espacio horizontal de 20px entre las opciones */
+    color: rgb(0, 0, 0); /* Texto en blanco */
+    font-size: 2.5rem; /* Tamaño del texto ligeramente más grande */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+}
+
+/* Contenedor principal de las tarjetas de oferta */
+/* Utilizamos flexbox para mostrar las tarjetas en línea y distribuir el espacio de manera uniforme */
+.offer-cards {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a nuevas filas si no caben en una línea */
+    gap: 20px; /* Añade espacio consistente entre las tarjetas */
+}
+
+/* Estilos para las tarjetas individuales de ofertas */
+/* Las tarjetas son contenedores con un diseño limpio, sombra y esquinas redondeadas */
+.card {
+    font-family: "Chakra Petch", sans-serif;
+    font-size:120%;
+    background-color: white; /* Fondo blanco para las tarjetas */
+    padding: 20px; /* Espacio interno de 20px */
+    border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+    width: 30%; /* Cada tarjeta ocupará el 30% del contenedor principal en pantallas grandes */
+    text-align: center; /* Centra el contenido de la tarjeta */
+    box-shadow: 0px 4px 8px #275B83; /* Añade una sombra suave para resaltar las tarjetas */
+    margin: 10px; /* Añade espacio entre las tarjetas */
+    display: flex; /* Añade flexbox dentro de la tarjeta */
+    flex-direction: column; /* Asegura que los elementos dentro de la tarjeta estén alineados en columna */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos de la tarjeta */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+/* Las imágenes ocupan todo el ancho disponible de la tarjeta, con esquinas redondeadas */
+.card img {
+    width: 100%; /* La imagen se adapta al 100% del ancho de la tarjeta */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen, coincidiendo con la tarjeta */
+}
+
+/* Estilos para el botón de reserva dentro de las tarjetas */
+/* Botón destacado con un color azul brillante y texto blanco */
+.card .btn-reserve {
+    background-color: #275B83; /* Color de fondo azul */
+    color: white; /* Texto en blanco */
+    border: none; /* Elimina los bordes predeterminados */
+    padding: 10px; /* Añade espaciado interno al botón */
+    margin-top: 10px; /* Espacio superior para separar el botón del contenido anterior */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clicable */
+    border-radius: 5px; /* Bordes ligeramente redondeados para el botón */
+    align-self: center; /* Alinea el botón al centro dentro de la tarjeta */
+    width: 80%; /* Hace que el botón ocupe el 80% del ancho de la tarjeta */
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Las tarjetas ocupan el 100% del contenedor en pantallas pequeñas */
+        margin: 10px 0; /* Reduce el margen lateral en dispositivos móviles */
+    }
+
+    .offer-cards {
+        justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+    }
+
+    .card img {
+        border-radius: 8px; /* Reduce ligeramente el radio de las esquinas en pantallas pequeñas */
+    }
+
+    .card .btn-reserve {
+        padding: 12px; /* Botón ligeramente más grande para facilitar su uso en móviles */
+        font-size: 16px; /* Aumenta el tamaño del texto en el botón */
+    }
+}
+
+
+/* Estilos para el pie de página */
+/* El pie de página tiene un fondo oscuro y el texto blanco para hacer contraste */
+footer {
+    text-align: center; /* Centra el texto dentro del pie de página */
+    margin-top: 20px; /* Añade espacio superior para separar del contenido principal */
+    padding: 20px; /* Añade espacio interno alrededor del contenido del pie de página */
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Texto blanco */
+}
+
+/* Responsividad para pantallas pequeñas (dispositivos móviles) */
+/* Este bloque asegura que el diseño se adapte adecuadamente en dispositivos móviles */
+@media screen and (max-width: 300px) {
+    /* Ajusta las tarjetas para que se muestren en columnas en pantallas pequeñas */
+    .offer-cards {
+        flex-direction: column; /* Cambia la disposición de las tarjetas a una columna vertical */
+        align-items: center; /* Centra las tarjetas en la pantalla */
+    }
+
+    /* Ajusta el tamaño de las tarjetas para pantallas más pequeñas */
+    .card {
+        width: 80%; /* En pantallas pequeñas, las tarjetas ocuparán el 80% del ancho de la pantalla */
+    }
+
+    /* Cambia la disposición de las opciones de navegación a vertical en pantallas pequeñas */
+    .options-nav {
+        flex-direction: column; /* Muestra las opciones de navegación una debajo de la otra */
+    }
+
+    /* Añade más espacio entre las opciones de navegación para mejorar la usabilidad en móviles */
+    .options-nav .option {
+        margin: 10px 0; /* Espacio vertical entre cada opción de navegación */
+    }
+}
+
+/* Posicionar el botón en la parte superior izquierda */
+.login-button {
+    position: absolute; /* Hacer que el botón esté fuera del flujo normal del documento */
+    top: 20px; /* Ajustar la distancia desde la parte superior de la página */
+    right: 20px; /* Ajustar la distancia desde la parte izquierda de la página */
+    padding: 16px 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-button:hover {
+    background-color: #b9b7b7; /* Cambio de color al pasar el cursor */
+}
+
+@media (max-width: 100px) {
+    .login-button {
+        width: 3px; /* El botón ocupará el 100% del ancho en pantallas pequeñas */
+        padding: 5px; /* Aumenta el padding para mayor facilidad de uso */
+        font-size: 2px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+    }
+}
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijado en pantalla */
+    z-index: 1; /* Encima del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Centrar el contenido */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Tamaño del modal */
+    max-width: 500px; /* Tamaño máximo */
+}
+
+/* Estilo para el botón de cerrar */
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos del contenedor modal */
+.modal-content {
+    padding: 40px; /* Añade más espacio dentro del modal para que los inputs no queden pegados al borde */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    position: relative;
+    text-align: left;
+}
+
+.login-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px; /* Añade espacio dentro del formulario */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+form label {
+    margin-bottom: 5px; /* Reduce el espacio entre la etiqueta y el input */
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre los inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no exceda el ancho del input */
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

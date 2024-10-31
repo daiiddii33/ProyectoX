@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservaciones de Viajes - Aerial Adventures</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./img/Imagen5.jpg" alt="Logo de Aerial Adventures">
+                </div>
+            <!-- Otro contenido que seguirá después del logo -->
+            <div class="header-container">
+                <button class="login-button" onclick="abrirModal()">Iniciar Sesión</button>
+            </div>
+            
+            <!-- Título y búsqueda -->
+            <div class="image-container">
+                    <img src="./img/pngwing.com.png" alt="Vuelo a La Paz Baja California Sur" class="responsive-img">
+             </div>
+
+            <h1 class="main-title">Aerial Adventures</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Ingresa Tu Destino Aquí...">
+                <button class="btn-search">🔍</button>
+            </div>
+
+        </header>
+    
+        <!-- Opciones de vuelos y reservaciones -->
+        <nav class="options-nav">
+            <div class="option">VUELOS</div>
+            <div class="option">RESERVACIONES</div>
+        </nav>
+    
+        <!-- Sección de Ofertas Destacadas -->
+        <section class="featured-offers">
+            <h2>Ofertas Destacadas</h2>
+            <div class="offer-cards">
+                <div class="card">
+                    <a href="vuelo1.html"><img src="./img/Imagen1.jpg" alt="Vuelo a La Paz Baja California Sur"></a>
+                    <p>Vuelo a B.C.S</p>
+                    <p>Desde $3000 - Ida y Vuelta</p>
+                    <button class="btn-reserve">Reservar Ahora</button>
+                </div>
+                <div class="card">
+                    <a href="hotel.html"><img src="./img/Imagen2.jpg" alt="Hoteles 5 Estrellas"></a>
+                    <p>Hoteles que puedes consultar precios</p>
+                    <p>y observar tipos de habitaciones</p>
+                </div>
+                <div class="card">
+                    <a href="paquete.html"><img src="./img/Imagen4.jpg" alt="Paquete a Playa del Carmen"></a>
+                    <p>Paquete a Playa del Carmen</p>
+                    <p>Desde $4999 - Todo incluido</p>
+                    <button class="btn-reserve">Reservar Ahora</button>
+                </div>
+            </div>
+
+<!-- Modal de Inicio de Sesión -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <p><label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p><label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <p><button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="#" id="register-link">Regístrate aquí</a></p>
+    </div>
+</div>
+
+<!-- Modal de Registro -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Registro</h2>
+        <form id="register-form">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <p><label for="surname">Apellido:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <p><label for="register-email">Correo Electrónico:</label>
+            <input type="email" id="register-email" name="email" required>
+
+            <p><label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" name="password" required>
+
+            <p><button type="submit">Registrar</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="#" id="login-link">Inicia sesión aquí</a></p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
